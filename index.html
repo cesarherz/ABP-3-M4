@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Market</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <h1>Gastronomía Market - Gestión de Proveedores</h1>
+
+    <form id="form-proveedor">
+        <h2>Agregar Proveedor</h2>
+        <label for="nombre-proveedor">Nombre del Proveedor:</label>
+        <input type="text" id="nombre-proveedor" required><br>
+
+        <label for="nombre-articulo">Nombre del Artículo:</label>
+        <input type="text" id="nombre-articulo" required><br>
+
+        <label for="email-articulo">Email del Artículo:</label>
+        <input type="email" id="email-articulo" required><br>
+
+        <label for="telefono-articulo">Teléfono del Artículo:</label>
+        <input type="tel" id="telefono-articulo" required><br>
+
+        <label for="precio-articulo">Precio del Artículo:</label>
+        <input type="number" id="precio-articulo" required><br>
+
+        <label for="pais-proveedor">País:</label>
+        <input type="text" id="pais-proveedor" required><br>
+
+        <label for="internacional-proveedor">¿Proveedor Internacional?</label>
+        <input type="checkbox" id="internacional-proveedor"><br>
+
+        <button type="submit">Agregar Proveedor</button>
+    </form>
+
+    <form id="form-impuesto">
+        <h2>Calcular Impuesto</h2>
+        <label for="precio-calculo">Precio del Artículo:</label>
+        <input type="number" id="precio-calculo" required><br>
+
+        <button type="submit">Calcular Impuesto</button>
+        <p id="resultado-impuesto"></p>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre Proveedor</th>
+                <th>Nombre Artículo</th>
+                <th>Precio</th>
+                <th>Información</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-proveedores">
+        </tbody>
+    </table>
+
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
